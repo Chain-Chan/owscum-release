@@ -9,7 +9,7 @@ mod เสริมฝั่งผู้เล่นสำหรับเซิ�
 (`Insert`: สมาชิก squad, เรดาร์ 100 ม., ข้อความ squad + `/ping`) — ใส่และถอดให้โดย ONE WORLD Launcher บน Windows
 
 ### ติดตั้ง 3 ขั้น
-1. โหลด `OneWorldLauncher-0.5.2.zip` (ชื่อไฟล์ใช้เลขรุ่นของ Launcher) จาก release ล่าสุด → คลิกขวา → Properties → ติ๊ก **Unblock** → OK
+1. โหลด `OneWorldLauncher-0.5.5.zip` (ชื่อไฟล์ใช้เลขรุ่นของ Launcher) จาก release ล่าสุด → คลิกขวา → Properties → ติ๊ก **Unblock** → OK
 2. แตก zip ไว้ที่ไหนก็ได้ → ได้โฟลเดอร์ `ONE WORLD Launcher` + `LICENSE.txt` / `NOTICE.txt`
 3. ในโฟลเดอร์นั้นดับเบิลคลิก **`ONE WORLD Launcher.exe`** → กด **"เข้าเล่น ONE WORLD"** • Windows ขึ้น "Windows protected your PC" (Launcher
    ไม่มีลายเซ็นโค้ด) → **More info → Run anyway** • อย่าปิดหน้าต่าง Launcher ระหว่างเล่น
@@ -23,7 +23,7 @@ mod เสริมฝั่งผู้เล่นสำหรับเซิ�
   `SCUM\Binaries\Win64\ue4ss\` (UE4SS 4.0.0 + mod) เฉพาะตอนเล่น ONE WORLD • `%LOCALAPPDATA%\OneWorldLauncher` • `%LOCALAPPDATA%\OWMiniMap.ini` / `OWPDA.ini` (ตำแหน่งหน้าต่าง)
 - ทุกไฟล์ที่โหลดอยู่ใน manifest ที่เซ็นไว้ (ECDSA P-256) พร้อม SHA-256 — ไม่ตรง = ไม่ใช้ • สคริปต์เป็น PowerShell ข้อความธรรมดา เปิดอ่านได้ •
   `ONE WORLD Launcher.exe` เป็นแค่หน้าต่างครอบสคริปต์ (ไม่มีลายเซ็นโค้ด — SHA-256 อยู่ใน `launcher.json` ที่เซ็นแล้ว + `SHA256SUMS.txt`)
-- เทียบไฟล์ที่โหลดกับ `SHA256SUMS.txt` ใน release: `Get-FileHash .\OneWorldLauncher-0.5.2.zip`
+- เทียบไฟล์ที่โหลดกับ `SHA256SUMS.txt` ใน release: `Get-FileHash .\OneWorldLauncher-0.5.5.zip`
 - VirusTotal: https://www.virustotal.com/gui/file/106cd0353420c90144ce2eeeeffe5a64beebaffe257adaeacfce40f652362cf3 (3 / 66 — heuristic / machine-learning flags on a new unsigned file)
   
 ### ข้อตกลงการใช้งาน (ย่อจาก `LICENSE.txt` — อ่านฉบับเต็มใน release)
@@ -42,7 +42,7 @@ Optional client mods for the **ONE WORLD** SCUM server: a **minimap** in the top
 **PDA** (`Insert`: squad members, 100 m radar, squad messages + `/ping`), put in and taken out by the ONE WORLD Launcher for Windows.
 
 ### Install (3 steps)
-1. Download `OneWorldLauncher-0.5.2.zip` (named after the launcher version) from the latest release → right-click → Properties → tick **Unblock** → OK.
+1. Download `OneWorldLauncher-0.5.5.zip` (named after the launcher version) from the latest release → right-click → Properties → tick **Unblock** → OK.
 2. Unzip it anywhere → you get the `ONE WORLD Launcher` folder + `LICENSE.txt` / `NOTICE.txt`.
 3. In that folder double-click **`ONE WORLD Launcher.exe`** → press **"เข้าเล่น ONE WORLD"** (Play ONE WORLD). If Windows says
    "Windows protected your PC" (the launcher is not code-signed): **More info → Run anyway**. Keep the launcher window open while you play.
@@ -59,7 +59,7 @@ SCUM starts through Steam with BattlEye. The mods are also removed automatically
 - Every download is listed in a signed manifest (ECDSA P-256) with its SHA-256; anything that does not match is refused. The scripts are
   plain-text PowerShell — open and read them. `ONE WORLD Launcher.exe` is only a window over the scripts (not code-signed; its SHA-256 is in
   the signed `launcher.json` and in `SHA256SUMS.txt`).
-- Check your download against `SHA256SUMS.txt` in the release: `Get-FileHash .\OneWorldLauncher-0.5.2.zip`
+- Check your download against `SHA256SUMS.txt` in the release: `Get-FileHash .\OneWorldLauncher-0.5.5.zip`
 - VirusTotal: https://www.virustotal.com/gui/file/106cd0353420c90144ce2eeeeffe5a64beebaffe257adaeacfce40f652362cf3 (3 / 66 — heuristic / machine-learning flags on a new unsigned file)
 
 ### Terms of use (short form of `LICENSE.txt` — read the full file in the release)
